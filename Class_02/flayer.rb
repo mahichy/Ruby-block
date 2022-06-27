@@ -19,3 +19,16 @@ flayers = []
 end
 
 puts flayers
+
+flayers.each do |flyer|
+	puts "#{flyer.name} - #{flyer.miles_flown} miles "
+end
+
+total = 0
+flayers.each do |flyer|
+	total += flyer.miles_flown
+end
+puts "total miles_flown: #{total}"
+
+
+
